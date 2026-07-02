@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hanna Design</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom_responsive.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg"/>
+</head>
+<body>
+<div class="container-scroller">
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo"/></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu"></span>
+            </button>
+            <div class="contTit">
+                <h4>About</h4>
+            </div>
+            <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item nav-profile topProfile">
+                    <a class="nav-link">
+                        <div class="nav-profile-img">
+                            <img src="assets/images/hannaProfile2.jpg" alt="image">
+                        </div>
+                        <div class="nav-profile-text">
+                            <p class="mb-1 text-black">김한나 <span class="text-info">Designer</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block full-screen-link">
+                    <a class="nav-link">
+                        <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-settings d-none d-lg-block">
+                    <a class="nav-link" href="#">
+                        <div class="btnTop">
+                            <i class="mdi mdi-apple-keyboard-control"></i>
+                            <span>TOP</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <li class="nav-item nav-profile">
+                    <a href="#" class="nav-link">
+                        <div class="nav-profile-image">
+                            <img src="assets/images/hannaProfile.jpg" alt="profile">
+                            <span class="login-status online"></span>
+                        </div>
+                        <div class="nav-profile-text d-flex flex-column">
+                            <span class="font-weight-bold mb-2">김 한 나</span>
+                            <span class="text-info text-small">Designer</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span class="menu-title">About</span>
+                        <i class="mdi mdi-account menu-icon"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/portfolio/portfolio.html">
+                        <span class="menu-title">Portfolio</span>
+                        <i class="mdi mdi-apps menu-icon"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item sidebar-actions">
+                    <span class="nav-link">
+<!--                        <div class="border-bottom">-->
+<!--                            <p class="text-secondary text-small">Resume</p>-->
+<!--                        </div>-->
+<!--                        <button class="btn btn-block btn-lg btn-info mt-3 w-100">이력서 <i class="mdi mdi-download"></i></button>-->
+                        <div class="mt-4">
+                            <div class="border-bottom">
+                                <p class="text-secondary text-small">Portfolio - PDF</p>
+                            </div>
+                            <a class="btn btn-block btn-lg btn-primary mt-3 w-100" href="assets/download/김한나_포트폴리오.pdf" download>포트폴리오 - PDF <i class="mdi mdi-download"></i> </a>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="content aboutContent">
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card aboutCont">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="aboutProfileBgCont">
+                                                <canvas id="aboutProfileBg"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-top prflMenu">
+                                        <div class="profile-image">
+                                            <img src="assets/images/hannaProfile3.png" alt="profile" class="rounded-circle ">
+                                            <span class="login-status online"></span>
+                                        </div>
+                                        <div class="mb-0 flex-grow">
+                                            <h5 class="me-2 mb-0">김한나 - <span>DESIGNER</span></h5>
+
+<!--                                            <ul class="nav nav-pills profile-menu" id="pills-tab" role="tablist">-->
+<!--                                                <li class="nav-item" role="presentation">-->
+<!--                                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">-->
+<!--                                                        <a href="#about">#소개</a>-->
+<!--                                                    </button>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item" role="presentation">-->
+<!--                                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">-->
+<!--                                                        <a href="#service">#기술</a>-->
+<!--                                                    </button>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item" role="presentation">-->
+<!--                                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">-->
+<!--                                                        <a href="#contact">#경력</a>-->
+<!--                                                    </button>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item" role="presentation">-->
+<!--                                                    <button class="nav-link" id="pills-contact-tab2" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">-->
+<!--                                                        <a href="#home">#자격증</a>-->
+<!--                                                    </button>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Web <span class="text-primary">/</span> APP <span class="text-primary">&</span> Visual DESIGNER</h4>
+                                    <ul class="list-star">
+                                        <li>한남대학교 시각디자인 전공 (도자공예 부전공 / 교직이수)</li>
+                                        <li>hn34567@hanmail.net</li>
+                                        <li>010-6201-4076</li>
+                                        <li>대전 유성구 원신흥동</li>
+                                    </ul>
+                                    <div class="aboutTxtCont">
+                                        <p>시각디자인을 전공하고 2013년 스마트 E-Book을 만드는 과정을 통해 처음 웹디자인을 접하였습니다.<br>
+                                        그 과정에서 HTML과 CSS를 기반으로 웹 UI를 직접 디자인하고 구현하는 경험을 쌓았으며, 이후 반응형 웹과 앱 GUI 디자인까지 영역을 확장해 왔습니다.</p>
+                                        <p>2020년부터 쇼핑몰 UI 개선, 이벤트 배너 및 상세페이지 디자인 업무를 수행했고,<br> 
+                                            안경원 전문 ERP 프로그램을 개발하는 기업에서 Angular(부트스트랩) 기반 UI 디자인 및 퍼블리싱을 담당했습니다.<br>
+                                        또한 2023년 이후에는 React(MUI) 기반 웹서비스(교육, 제조, 운송 분야 등)의 퍼블리싱을 담당했습니다. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">핵심역량</h4>
+                                    <div class="list-wrapper">
+                                        <ul class="d-flex flex-column ">
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> HTML & CSS
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> Bootstrap / MUI
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> Angular / React
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> ios / Android 모바일 앱 GUI
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> Visual Design
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-checkbox-marked"></i> 간단한 영상편집
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card">
+                            <div class="card bg-gray">
+                                <div class="card-body pb-0">
+                                    <h4 class="card-title text-white">기술</h4>
+                                    <div class="row">
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card bg-gradient-info card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_web.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">웹디자인</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <span class="card-text badge rounded-pill bg-info">디자인 60%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card card bg-gradient-danger card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_app.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">앱디자인(GUI)</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <span class="card-text badge rounded-pill bg-danger">디자인 10%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card bg-gradient-success card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_computerGraphics.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">시각디자인</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <span class="card-text badge rounded-pill bg-success">디자인 30%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card bg-gradient-warning card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_html_css.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">HTML / CSS</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <div class="card-text-cont">
+                                                            <span class="card-text badge rounded-pill bg-warning">Web</span>
+                                                            <span class="card-text badge rounded-pill bg-warning">Bootstrap</span>
+                                                            <span class="card-text badge rounded-pill bg-warning">Angular</span>
+                                                            <span class="card-text badge rounded-pill bg-warning">React</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card bg-gradient-primary card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_ps-ai.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">포토샵 / 일러스트</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <div class="card-text-cont">
+                                                            <span class="card-text badge rounded-pill bg-primary">Web</span>
+                                                            <span class="card-text badge rounded-pill bg-primary">App</span>
+                                                            <span class="card-text badge rounded-pill bg-primary">Visual</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 stretch-card grid-margin">
+                                            <div class="card bg-gradient-secondary card-img-holder  text-white service-card">
+                                                <div class="card-body">
+                                                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
+                                                        alt="circle-image"/>
+                                                    <div class="textCont">
+                                                        <img src="assets/images/icon_premiere.svg" class="service-img me-2" alt="image">
+                                                        <h3 class="mb-1">프리미어</h3>
+                                                        <span class="serviceTitLine"></span>
+                                                        <span class="card-text badge rounded-pill bg-secondary">영상편집</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">경력</h4>
+                                    <div class="career_timeline_cont">
+                                        <div class="timeline">
+                                            <ul>
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            리디안랩스<br>
+                                                            <span class="team-text">디자인팀 - 매니저</span>
+                                                        </h3>
+                                                        <p>React / MUI , bootstrap 퍼블리싱</p>
+                                                        <div class="project-text">
+                                                            리디안랩스 <span class="line"></span> 교육 (LXP) <span class="line"></span> 제조 (ERP) <span class="line"></span> 운송 (TMS) <span class="line"></span> 랜딩페이지
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2023.11 ~ 2025.06</h4>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            (주)유아이컴<br>
+                                                            <span class="team-text">개발팀 - 연구원</span>
+                                                        </h3>
+                                                        <p>Angular / Bootstrap 디자인 & 퍼블리싱</p>
+                                                        <div class="project-text">
+                                                            UISP <span class="line"></span> UIBOOK <span class="line"></span> UITS <span class="line"></span>UICOM <span class="line"></span> EYEMETA <span class="line"></span> 안경샘플판 <span class="line"></span> POP <span class="line"></span> 렌즈봉투 <span class="line"></span> 기타 홍보물
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2020.10 ~ 2023.03</h4>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            에르코스<br>
+                                                            <span class="team-text">MBC사업부 - 대리</span>
+                                                        </h3>
+                                                        <p>WEB / APP & 상세페이지 디자인</p>
+                                                        <div class="project-text">
+                                                            MBC 네트워크팔도장터 <span class="line"></span> At 농가정보서비스 지원사업 <span class="line"></span> At 유기농식품 유통활성화 지원사업 <span class="line"></span> 농사랑 <span class="line"></span> 남도장터
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2019.07 ~ 2020.03</h4>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            (주)에스엔<br>
+                                                            <span class="team-text">신기술연구소 / 연구원</span>
+                                                        </h3>
+                                                        <p>Web / 소프트웨어 GUI 디자인</p>
+                                                        <div class="project-text">
+                                                            comEL <span class="line"></span> Coral <span class="line"></span> Coral Cloud <span class="line"></span> Grin <span class="line"></span> 손수
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2017.05 ~ 2018.02</h4>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            (주)비디오팩토리<br>
+                                                            <span class="team-text">개발팀 / 연구원</span>
+                                                        </h3>
+                                                        <p>Web / APP GUI 디자인</p>
+                                                        <div class="project-text">
+                                                            VideoFactory <span class="line"></span> Sero
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2014.11 ~ 2017.01</h4>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="time-cont">
+                                                        <h3>
+                                                            (주)메리트<br>
+                                                            <span class="team-text">디자인팀 / 주임</span>
+                                                        </h3>
+                                                        <p>패키지, CI, BI, 카탈로그</p>
+                                                        <div class="project-text">
+                                                            한국삼_하늘선물 발효 흑홍삼진액 <span class="line"></span> 구록원_대추&천년초엑기스 <span class="line"></span> 동진제약_고려황금홍삼절편 <span class="line"></span> 순천향대RIS 충남전통생활도자기육성사업단 CI <span class="line"></span> 한국인삼명가_인삼맨(캐릭터) BI <span class="line"></span> 중부대 향토지원명품브랜드_충심명작 카다로그
+                                                        </div>
+                                                    </div>
+                                                    <div class="time">
+                                                        <h4>2011.04 ~ 2012.11</h4>
+                                                    </div>
+                                                </li>
+
+                                                <div style="clear:both;"></div>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+<!--                                    <div class="table-responsive">-->
+<!--                                        <table class="table">-->
+<!--                                            <thead>-->
+<!--                                            <tr>-->
+<!--                                                <th> #</th>-->
+<!--                                                <th> Name</th>-->
+<!--                                                <th> Due Date</th>-->
+<!--                                                <th> Progress</th>-->
+<!--                                            </tr>-->
+<!--                                            </thead>-->
+<!--                                            <tbody>-->
+<!--                                            <tr>-->
+<!--                                                <td> 1</td>-->
+<!--                                                <td> Herman Beck</td>-->
+<!--                                                <td> May 15, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-success" role="progressbar"-->
+<!--                                                             style="width: 25%" aria-valuenow="25" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+
+<!--                                            <tr>-->
+<!--                                                <td colspan="4">-->
+<!--                                                   -->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td> 2</td>-->
+<!--                                                <td> Messsy Adam</td>-->
+<!--                                                <td> Jul 01, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-danger" role="progressbar"-->
+<!--                                                             style="width: 75%" aria-valuenow="75" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td> 3</td>-->
+<!--                                                <td> John Richards</td>-->
+<!--                                                <td> Apr 12, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-warning" role="progressbar"-->
+<!--                                                             style="width: 90%" aria-valuenow="90" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td> 4</td>-->
+<!--                                                <td> Peter Meggik</td>-->
+<!--                                                <td> May 15, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-primary" role="progressbar"-->
+<!--                                                             style="width: 50%" aria-valuenow="50" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td> 5</td>-->
+<!--                                                <td> Edward</td>-->
+<!--                                                <td> May 03, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-danger" role="progressbar"-->
+<!--                                                             style="width: 35%" aria-valuenow="35" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td> 5</td>-->
+<!--                                                <td> Ronald</td>-->
+<!--                                                <td> Jun 05, 2015</td>-->
+<!--                                                <td>-->
+<!--                                                    <div class="progress">-->
+<!--                                                        <div class="progress-bar bg-gradient-info" role="progressbar"-->
+<!--                                                             style="width: 65%" aria-valuenow="65" aria-valuemin="0"-->
+<!--                                                             aria-valuemax="100"></div>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            </tbody>-->
+<!--                                        </table>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="home">
+                        <div class="col-12 grid-margin stretch-card certificate-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">자격증</h4>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th> 자격증</th>
+                                                <th> 발행쳐</th>
+                                                <th> 취득일</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/icon_web.svg" class="me-2" alt="image">
+                                                    웹디자인 기능사
+                                                </td>
+                                                <td>
+                                                    <label class="badge badge-success">한국산업인력공단</label>
+                                                </td>
+                                                <td> 2013년 12월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/icon_computerGraphics.svg" class="me-2" alt="image">
+                                                    컴퓨터그래픽스운용기능사
+                                                </td>
+                                                <td>
+                                                    <label class="badge badge-success">한국산업인력공단</label>
+                                                </td>
+                                                <td> 2013년 06월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/icon_elctrPblct.svg" class="me-2" alt="image">
+                                                    전자출판기능사
+                                                </td>
+                                                <td>
+                                                    <label class="badge badge-success">한국산업인력공단</label>
+                                                </td>
+                                                <td> 2013년 10월</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/icon_shcool.svg" class="me-2" alt="image">
+                                                    중등학교2급정교사(디자인/공예)
+                                                </td>
+                                                <td>
+                                                    <label class="badge badge-info">교직이수 - 한남대</label>
+                                                </td>
+                                                <td> 2011년 02월</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid d-flex justify-content-between">
+                    <span class="text-muted d-block text-center text-sm-start d-sm-inline-block"></span>
+                    <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> @Hanna Design - Portfolio</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="assets/vendors/chart.js/Chart.min.js"></script>
+<script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="assets/js/off-canvas.js"></script>
+<script src="assets/js/hoverable-collapse.js"></script>
+<script src="assets/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/todolist.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- End custom js for this page -->
+</body>
+</html>

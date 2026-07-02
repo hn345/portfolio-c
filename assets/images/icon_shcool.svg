@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFCE70;}
+	.st1{clip-path:url(#SVGID_00000069395141086175369320000001134811583556974260_);fill:#E5C470;}
+	.st2{fill:#C8C2E9;}
+	.st3{fill:#F7931E;}
+	.st4{fill:#CCD1D9;}
+	.st5{fill:#AAB2BD;}
+	.st6{fill:#838F9B;}
+	.st7{fill:#656D78;}
+	.st8{fill:#E6E9ED;}
+	.st9{fill:#CF9E76;}
+	.st10{fill:#B27946;}
+</style>
+<circle class="st0" cx="64" cy="64" r="64"/>
+<g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="64" cy="64" r="64"/>
+		</defs>
+		<clipPath id="SVGID_00000161615653392047156110000013030457333191299505_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon style="clip-path:url(#SVGID_00000161615653392047156110000013030457333191299505_);fill:#E5C470;" points="62.5,55 
+			111.5,103 128,128 54.4,128 20.5,101 		"/>
+	</g>
+</g>
+<g>
+	<path class="st2" d="M63.5,26.3c-0.8,0-1.4-0.7-1.5-1.5v-8.3c0-0.8,0.6-1.5,1.5-1.5c0.8,0,1.5,0.6,1.5,1.5v8.3
+		C65,25.7,64.3,26.3,63.5,26.3z"/>
+	<path class="st3" d="M63.9,11.3h12.8c1,0,1.8,0.8,1.8,1.8c0,0,0,0,0,0V19c0,1-0.8,1.8-1.8,1.8l0,0H62.5c-0.2,0-0.4-0.2-0.4-0.4
+		v-7.2C62.1,12.1,62.9,11.3,63.9,11.3z"/>
+	<g>
+		<polygon class="st4" points="20.2,99.3 20.2,72.4 25.3,65.7 35.4,65.7 92.6,65.7 102.7,65.7 107.8,72.4 107.8,99.3 		"/>
+		<rect x="20.2" y="72.4" class="st5" width="87.6" height="3.4"/>
+		<polygon class="st5" points="42.9,69 23.6,80.6 23.6,99.3 104.4,99.3 104.4,80.6 85.1,69 		"/>
+		<polygon class="st6" points="84.2,72.4 107.8,72.4 102.7,65.7 92.6,65.7 35.4,65.7 25.3,65.7 20.2,72.4 43.8,72.4 		"/>
+		<rect x="40.4" y="65.7" class="st7" width="47.2" height="6.7"/>
+		<polygon class="st8" points="26.9,65.7 26.9,55.5 47.2,45.4 80.8,45.4 101.1,55.5 101.1,65.7 		"/>
+		<rect x="40.4" y="58.9" class="st4" width="47.2" height="6.7"/>
+		<rect x="26.9" y="55.5" class="st4" width="74.1" height="3.4"/>
+		<polygon class="st6" points="80.8,55.5 101.1,55.5 80.8,45.4 47.2,45.4 26.9,55.5 47.2,55.5 		"/>
+		<polygon class="st7" points="80.8,45.4 47.2,45.4 43.8,47.1 43.8,55.5 47.2,55.5 80.8,55.5 84.2,55.5 84.2,47.1 		"/>
+		<polygon class="st8" points="26.9,99.3 26.9,82.5 43.8,72.4 84.2,72.4 101.1,82.5 101.1,99.3 		"/>
+		<rect x="40.4" y="82.5" class="st4" width="47.2" height="15.2"/>
+		<polygon class="st4" points="33.7,99.3 33.7,89.2 43.8,89.2 84.2,89.2 94.3,89.2 94.3,99.3 		"/>
+		<rect x="40.4" y="89.2" class="st5" width="47.2" height="10.1"/>
+		<polygon class="st6" points="84.2,82.5 101.1,82.5 84.2,72.4 43.8,72.4 26.9,82.5 43.8,82.5 		"/>
+		<polygon class="st7" points="84.2,72.4 43.8,72.4 40.4,74.4 40.4,82.5 43.8,82.5 84.2,82.5 87.6,82.5 87.6,74.4 		"/>
+		<polygon class="st8" points="47.2,62.3 47.2,38.7 64,23.5 80.8,38.7 80.8,62.3 		"/>
+		<polygon class="st6" points="47.2,38.7 80.8,38.7 64,23.5 		"/>
+		<circle class="st8" cx="64" cy="35.3" r="3.4"/>
+		<rect x="43.8" y="62.3" class="st8" width="40.4" height="40.4"/>
+		<rect x="43.8" y="99.3" class="st4" width="40.4" height="3.4"/>
+		<rect x="53.9" y="45.4" class="st6" width="6.7" height="10.1"/>
+		<rect x="67.4" y="45.4" class="st6" width="6.7" height="10.1"/>
+		<path class="st9" d="M57.3,102.7V92.6c0-3.7,3-6.7,6.7-6.7l0,0c3.7,0,6.7,3,6.7,6.7v10.1H57.3z"/>
+		<rect x="50.5" y="69" class="st6" width="26.9" height="10.1"/>
+		<rect x="55.6" y="69" class="st5" width="3.4" height="10.1"/>
+		<rect x="62.3" y="69" class="st5" width="3.4" height="10.1"/>
+		<rect x="69.1" y="69" class="st5" width="3.4" height="10.1"/>
+		<rect x="47.2" y="58.9" class="st4" width="33.7" height="3.4"/>
+		<rect x="47.2" y="38.7" class="st4" width="33.7" height="3.4"/>
+		<rect x="43.8" y="55.5" class="st4" width="3.4" height="6.7"/>
+		<rect x="80.8" y="55.5" class="st4" width="3.4" height="6.7"/>
+		<rect x="26.9" y="82.5" class="st4" width="16.8" height="3.4"/>
+		<rect x="84.2" y="82.5" class="st4" width="16.8" height="3.4"/>
+		<rect x="57.3" y="99.3" class="st10" width="13.5" height="3.4"/>
+	</g>
+</g>
+</svg>

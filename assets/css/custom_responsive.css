@@ -1,0 +1,219 @@
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1060px;
+    }
+}
+
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+
+    .filterElementList .carousel-control-prev {
+        left: -5.8rem;
+    }
+
+    .filterElementList .carousel-control-next {
+        right: -5.8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-panel, .sidebar-icon-only .main-panel  {
+        margin-left: 0;
+    }
+
+    .navbar .navbar-brand-wrapper {
+        box-shadow: none;
+    }
+
+    .contTit {
+        display: none;
+    }
+
+    .filterElementList .carousel-control-prev {
+        left: -4.8rem;
+    }
+
+    .filterElementList .carousel-control-next {
+        right: -4.8rem;
+    }
+
+    .service-card .textCont h3 {
+        font-size: 1.4rem;
+    }
+
+    .filterElementList .modal_comel-cont .comel-card-box .comel-card {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card .card-body {
+        padding: 1.8rem 1.3rem;
+    }
+
+    .aboutCont .card-body {
+        padding: 0;
+    }
+
+    .aboutCont .prflMenu {
+        margin-top: -4rem;
+        padding: 0 1rem .5rem;
+    }
+
+    .filterElementCont .btn {
+        padding: 1rem 1.1rem;
+        font-size: 13px;
+        transition: .4s;
+    }
+
+    .filterElementList .modal-header {
+        min-height: 64px;
+        padding: .3rem 1.3rem;
+    }
+
+    .filterElementList .modal-header .modal-title img {
+        height: 33px;
+    }
+
+    .filterElementList .modal-body {
+        background: #fff;
+        padding: 2rem .8rem 2.2rem;
+    }
+
+    .filterElementList .modal-body .img_group h4 {
+        font-size: 1.2rem;
+    }
+
+    .filterElementList .modal-body .tit_explain {
+        padding: 1.5rem 16px;
+    }
+
+    .service-card .textCont h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-img {
+        max-height: 86px;
+    }
+
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 40px;
+    }
+
+    .timeline h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .timeline:before {
+        left: 20px;
+        height: 100%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 40px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -24px;
+        left: 50px;
+        right: inherit;
+        padding: 3px 16px;
+    }
+
+    .timeline ul li h3 {
+        font-size: 1.5rem;
+    }
+
+    .filterElementList .modal_uisp-cont .modal-header .modal-title img {
+        height: 30px;
+    }
+
+    .filterElementList .modal_uibook-cont .modal-header .modal-title img {
+        height: 28px;
+    }
+
+    .filterElementList .modal_uivc-cont .modal-header .modal-title img {
+        height: 31px;
+    }
+
+    .filterElementList .modal_uicom-cont .modal-header .modal-title img {
+        height: 27px;
+    }
+
+    .filterElementList .modal_eyemeta-cont .modal-header .modal-title img {
+        height: 49px;
+    }
+
+    .filterElementList .modal_drumidea-cont .modal-header .modal-title img {
+        height: 34px;
+    }
+
+    .filterElementList .modal_osalance-cont .modal-header .modal-title img {
+        height: 22px;
+    }
+
+    .filterElementList .modal_nong-cont .modal-header .modal-title img {
+        height: 47px;
+    }
+
+    .filterElementList .modal_emoji-cont .modal-header .modal-title img {
+        height: 42px;
+    }
+
+    .filterElementList .modal_comel-cont .modal-header .modal-title img {
+        height: 33px;
+    }
+
+    .filterElementList .modal_comel-cont .comel-card-box .comel-card {
+        width: 50%;
+    }
+
+    .filterElementList .modal_vf-cont .modal-title img {
+        height: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .aboutProfileBgCont {
+        height: 70px;
+        transition: height 0.15s ease;
+    }
+
+    .aboutCont .prflMenu .profile-image img {
+    width: 60px;
+    margin-right: 14px;
+    }
+
+    .filterElementList figure.snip0058 > img {
+        margin-bottom: -60px;
+    }
+
+    .filterElementList .modal_comel-cont .comel-card-box .comel-card {
+        width: 100%;
+    }
+}
