@@ -39,6 +39,11 @@
         display: none;
     }
 
+    .aboutProfileBgCont {
+        height: 140px;
+        transition: height 0.15s ease;
+    }
+
     .filterElementList .carousel-control-prev {
         left: -4.8rem;
     }
@@ -68,6 +73,16 @@
     .aboutCont .prflMenu {
         margin-top: -4rem;
         padding: 0 1rem .5rem;
+    }
+
+    .aboutCont .prflMenu h5 {
+        height: 4rem;
+        font-size: 20px;
+    }
+
+    .aboutProfileBgCont {
+        height: 110px;
+        transition: height 0.15s ease;
     }
 
     .filterElementCont .btn {

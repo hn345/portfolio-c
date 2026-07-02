@@ -261,7 +261,7 @@ li.nav-item.nav-profile .nav-link {
 /* Header */
 /* 프로필 bg 시작 */
 .aboutProfileBgCont {
-    height: 200px;
+    height: 176px;
     overflow: hidden;
     border-radius: 7px 7px 0 0;
 }
