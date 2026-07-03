@@ -85,6 +85,10 @@
         transition: height 0.15s ease;
     }
 
+    .img-lg {
+        width: 72px;
+        height: 72px; }
+
     .filterElementCont .btn {
         padding: 1rem 1.1rem;
         font-size: 13px;
